@@ -3,9 +3,12 @@ import { Nav } from "../components";
 
 function ErrorBoundary() {
   return (
-    <div>
+    <>
       <Nav />
-    </div>
+      <section>
+        <h1 className="title">Error Boundary</h1>
+      </section>
+    </>
   );
 }
 

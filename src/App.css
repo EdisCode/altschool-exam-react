@@ -8,12 +8,144 @@
 }
 
 :root {
-  --bg: lightgrey;
+  --bg: white;
+  --blue: aliceblue;
+  --deepblue: steelblue;
   --white: #ffffff;
+  --black: rgb(0, 0, 0);
+  --grey: grey;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   background: var(--bg);
   text-align: center;
+}
+
+section {
+  padding: 1em;
+  margin: 1em 5em;
+  /* border: 1px solid var(--deepblue); */
+}
+
+.title {
+  color: var(--deepblue);
+  text-decoration: underline;
+}
+
+/* Nav */
+.nav-container {
+  display: flex;
+  background-color: var(--blue);
+  padding: 0.5em;
+  place-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  margin-left: 4em;
+}
+
+.nav {
+  margin-right: 5em;
+}
+
+.link {
+  text-decoration: none;
+  padding: 1em;
+}
+
+.link:hover {
+  border-bottom: 1px solid var(--deepblue);
+}
+
+/* Page Not Found */
+.page-not-found {
+  padding: 5em;
+}
+
+.page-not-found h1 {
+  font-size: clamp(10rem, 40vmin, 10em);
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2rem;
+  text-shadow: 10px 10px 5px var(--grey);
+  color: var(--deepblue);
+}
+
+.page-not-found h2 {
+  font-weight: 500;
+  color: var(--grey);
+}
+
+.page-not-found p {
+  font-weight: 100;
+  color: var(--grey);
+  margin: 0.5em;
+}
+
+/* Counter */
+.count {
+  color: var(--deepblue);
+  margin: 3em 25em;
+  padding: 1em;
+  border: 1px solid var(--deepblue);
+}
+
+/* Button */
+.button {
+  padding: 1.5em;
+  margin: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 1em;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  box-shadow: 0 0 3px 2px var(--grey);
+}
+
+/* Home */
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  margin-right: 20em;
+  width: 100px;
+  height: 120px;
+}
+
+.intro {
+  color: var(--deepblue);
+  margin-right: 1em;
+}
+
+.info h2 {
+  font-weight: 500;
+  color: var(--grey);
+    margin: 1em;
+}
+
+.info p {
+  font-weight: 100;
+  color: var(--grey);
+  margin: 0.5em;
+}
+
+/* Footer */
+.footer {
+  background: var(--blue);
+  color: var(--grey);
+  text-align: center;
+  
+}
+
+.footer a {
+  padding: 1em;
+  text-decoration: none;
+  color: var(--deepblue);
 }

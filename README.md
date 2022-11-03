@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Counter App Using React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+You can check it out using at [https://altschool-exam-af66f.web.app/](https://altschool-exam-af66f.web.app/).
 
 ## Available Scripts
 

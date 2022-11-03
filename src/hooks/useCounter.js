@@ -1,4 +1,5 @@
 import { useReducer } from "react";
+import { useErrorHandler } from "react-error-boundary";
 
 function useCounter() {
   const actions = {
@@ -25,8 +26,20 @@ function useCounter() {
 
   const [state, dispatch] = useReducer(reducer, { count: 0 });
 
+  const maxCount = 100;
+
+  const handleError = useErrorHandler();
+
   const increment = () => {
-    dispatch({ type: actions.increment });
+    try {
+      if (state.count >= maxCount) {
+        throw new Error("You incremented a number that is more than 100.");
+      } else {
+        dispatch({ type: actions.increment });
+      }
+    } catch (error) {
+      handleError(error);
+    }
   };
 
   const decrement = () => {
@@ -38,7 +51,15 @@ function useCounter() {
   };
 
   const setValue = () => {
-    dispatch({ type: actions.setValue });
+    try {
+      if (state.count >= maxCount) {
+        throw new Error("You multiplied a number that is more than 100.");
+      } else {
+        dispatch({ type: actions.setValue });
+      }
+    } catch (error) {
+      handleError(error);
+    }
   };
 
   return { state, increment, decrement, reset, setValue };

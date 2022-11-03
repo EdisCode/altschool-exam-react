@@ -13,7 +13,7 @@ function Home() {
           <h1 className="intro">Hi there! My name is Edikan Ekanem</h1>
           <HiOutlineHand size={20} color="steelblue" />
         </div>
-        <div class="info">
+        <div className="info">
           <h2>Nice of you to join me here.</h2>
           <p>
             Kindly check out my amazing Counter app I created using ReactJS.

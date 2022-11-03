@@ -9,7 +9,13 @@ function Counter() {
     <>
       <Nav />
       <section>
-        <h1 className="title">Start The Counter To See Some Magic!</h1>
+        <h1 className="title">Let's Start Counting!</h1>
+        <div className="info">
+          <p>
+            N/B: Max count is 100. [Do not multiply a number that is more than
+            100. Do not increment a number that is more than 100!]
+          </p>
+        </div>
         <div className="count">Count: {state.count}</div>
         <div className="card">
           <Button backgroundColor="steelblue" color="white" onClick={setValue}>

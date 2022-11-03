@@ -6,7 +6,9 @@ function Nav() {
   return (
     <div className="nav-container">
       <div className="logo-container">
-        <img src={altschoolLogo} className="logo" alt="logo" />
+        <a href="https://www.altschoolafrica.com/">
+          <img src={altschoolLogo} className="logo" alt="logo" />
+        </a>
       </div>
 
       <div className="nav">

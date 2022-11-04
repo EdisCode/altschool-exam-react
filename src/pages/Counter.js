@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Nav, Button, Footer } from "../components";
 import useCounter from "../hooks/useCounter";
 
@@ -7,6 +8,14 @@ function Counter() {
 
   return (
     <>
+      <Helmet>
+        <title>Counter</title>
+        <meta
+          name="description"
+          content="Counter app that implements a counter with the four evident features in a custom hook - increment, decrement, reset, setValue."
+        />
+        <link rel="canonical" href="/counter" />
+      </Helmet>
       <Nav />
       <section>
         <h1 className="title">Let's Start Counting!</h1>

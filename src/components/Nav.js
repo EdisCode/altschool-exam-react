@@ -7,7 +7,15 @@ function Nav() {
     <div className="nav-container">
       <div className="logo-container">
         <a href="https://www.altschoolafrica.com/">
-          <img src={altschoolLogo} className="logo" alt="logo" />
+          <img
+            width={80}
+            height={80}
+            src={altschoolLogo}
+            className="logo"
+            alt="logo"
+            title="logo"
+            loading="eager"
+          />
         </a>
       </div>
 

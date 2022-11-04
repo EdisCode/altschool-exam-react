@@ -2,14 +2,31 @@ import React from "react";
 import { Nav, Footer } from "../components";
 import picture from "../assets/picture.jpg";
 import { HiOutlineHand } from "react-icons/hi";
+import { Helmet } from "react-helmet-async";
 
 function Home() {
   return (
     <>
+      <Helmet>
+        <title>Home</title>
+        <meta
+          name="description"
+          content="Intro for the Counter app with my details and GitHub link."
+        />
+        <link rel="canonical" href="/" />
+      </Helmet>
       <Nav />
       <section>
         <div className="avatar-container">
-          <img src={picture} className="avatar" alt="logo" />
+          <img
+            width={100}
+            height={120}
+            src={picture}
+            className="avatar"
+            alt="avatar"
+            title="avatar"
+            loading="eager"
+          />
           <h1 className="intro">Hi there! My name is Edikan Ekanem</h1>
           <HiOutlineHand size={20} color="steelblue" />
         </div>

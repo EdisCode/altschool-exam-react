@@ -1,7 +1,7 @@
 import React from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import { Route, Routes } from "react-router-dom";
-import { Home, PageNotFound, Counter, FallBack } from "../pages";
+import { Home, PageNotFound, UseReducer, FallBack, CustomHook } from "../pages";
 
 function AppRoute() {
   const errorHandler = (error, errorInfo) => {
@@ -14,10 +14,19 @@ function AppRoute() {
         <Route exact index element={<Home />} />
         <Route
           exact
-          path="/counter"
+          path="/customhook"
           element={
             <ErrorBoundary FallbackComponent={FallBack} onError={errorHandler}>
-              <Counter />
+              <CustomHook />
+            </ErrorBoundary>
+          }
+        />
+        <Route
+          exact
+          path="/usereducer"
+          element={
+            <ErrorBoundary FallbackComponent={FallBack} onError={errorHandler}>
+              <UseReducer />
             </ErrorBoundary>
           }
         />

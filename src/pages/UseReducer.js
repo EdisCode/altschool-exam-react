@@ -3,22 +3,22 @@ import { Helmet } from "react-helmet-async";
 import { Nav, Button, Footer } from "../components";
 import useCounter from "../hooks/useCounter";
 
-function Counter() {
+function UseReducer() {
   const { state, increment, decrement, reset, setValue } = useCounter();
 
   return (
     <>
       <Helmet>
-        <title>Counter</title>
+        <title>Use Reducer</title>
         <meta
           name="description"
-          content="Counter app that implements a counter with the four evident features in a custom hook - increment, decrement, reset, setValue."
+          content="Counter app that implements a counter with the four evident features in a custom hook with useReducer - increment, decrement, reset, setValue."
         />
-        <link rel="canonical" href="/counter" />
+        <link rel="canonical" href="/usereducer" />
       </Helmet>
       <Nav />
       <section>
-        <h1 className="title">Let's Start Counting!</h1>
+        <h1 className="title">Counter Using Use Reducer!</h1>
         <div className="info">
           <p>
             N/B: Max count is 100. [Do not multiply a number that is more than
@@ -46,4 +46,4 @@ function Counter() {
   );
 }
 
-export default Counter;
+export default UseReducer;

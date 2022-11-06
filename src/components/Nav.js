@@ -34,9 +34,18 @@ function Nav() {
             isActive ? { color: "steelblue" } : { color: "grey" }
           }
           className="link"
-          to="/counter"
+          to="/customhook"
         >
-          Counter
+          Custom Hook
+        </NavLink>
+        <NavLink
+          style={({ isActive }) =>
+            isActive ? { color: "steelblue" } : { color: "grey" }
+          }
+          className="link"
+          to="/usereducer"
+        >
+          Use Reducer
         </NavLink>
       </div>
     </div>

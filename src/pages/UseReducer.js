@@ -12,7 +12,7 @@ function UseReducer() {
         <title>Use Reducer</title>
         <meta
           name="description"
-          content="Counter app that implements a counter with the four evident features in a custom hook with useReducer - increment, decrement, reset, setValue."
+          content="Counter app that implements a counter with the four evident features with useReducer - increment, decrement, reset, setValue."
         />
         <link rel="canonical" href="/usereducer" />
       </Helmet>

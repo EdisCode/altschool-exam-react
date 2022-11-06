@@ -8,6 +8,8 @@ function FallBack({ error, resetErrorBoundary }) {
       <div>
         <h2>You got an error because:</h2>
         <p>{error.message}</p>
+        <h2>And you have coconut head!</h2>
+
         <Button
           backgroundColor="steelblue"
           color="white"
